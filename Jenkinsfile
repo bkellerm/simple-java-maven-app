@@ -19,14 +19,13 @@ pipeline {
                 //echo "Parameter value is: ${params.DEPLOY_BUILD}"
             }
         }
-        stage('Test') {
-            /* 
+        stage('Test') { 
             when {
                 expression { params.DEPLOY_BUILD }
             }
-            */
+            
             steps {
-                sh 'echo "Parameter value is: ${params.DEPLOY_BUILD}"'
+                sh 'echo "DEPLOY_BUILD is true"'
             }
         }
     }
