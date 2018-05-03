@@ -12,7 +12,7 @@ pipeline {
             }
         }
     }
-    stage {
+    stages {
         stage('Comment') {
             step {
                 sh 'echo "This is a Test"'
