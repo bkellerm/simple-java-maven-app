@@ -11,10 +11,12 @@ pipeline {
                 sh 'echo "This tests if outputing works"'
             }
         }
-        stage('Test') { 
+        stage('Test') {
+            /* 
             when {
                 expression { params.DEPLOY_BUILD }
             }
+            */
             steps {
                 sh 'echo "Does this message still get displayed?"'
             }
