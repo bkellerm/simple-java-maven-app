@@ -12,10 +12,10 @@ pipeline {
     stages {
         stage('Output'){
             steps {
-                sh 'echo "This tests if outputing works"'
-            }
-            steps {
-                sh 'echo "Parameter value is: ${params.DEPLOY_BUILD}"'
+                sh '''
+                    echo "This tests if outputing works"
+                    echo "Parameter value is: \${params.DEPLOY_BUILD}"
+                '''
             }
         }
         stage('Test') {
