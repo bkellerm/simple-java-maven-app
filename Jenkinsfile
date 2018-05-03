@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        booleanParam(defaultValue: true, description: 'Switch if DEV deployment stage is active (and following stages)', name: 'DEPLOY_BUILD')
+        booleanParam(defaultValue: false, description: 'Switch if DEV deployment stage is active (and following stages)', name: 'DEPLOY_BUILD')
     }
 
     stages {
