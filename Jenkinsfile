@@ -15,7 +15,7 @@ pipeline {
                 sh 'echo "This tests if outputing works"'
             }
             steps {
-                echo "Parameter value is: ${params.DEPLOY_BUILD}"
+                sh 'echo "Parameter value is: ${params.DEPLOY_BUILD}"'
             }
         }
         stage('Test') {
