@@ -26,7 +26,7 @@ pipeline {
             }
             */
             steps {
-                sh 'echo "Does this message still get displayed?"'
+                sh 'echo "Parameter value is: ${params.DEPLOY_BUILD}"'
             }
         }
     }
