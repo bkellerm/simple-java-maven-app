@@ -15,7 +15,7 @@ pipeline {
     stage {
         stage('Comment') {
             step {
-                sh 'echo "This is a Test'
+                sh 'echo "This is a Test"'
             }
         }
 
