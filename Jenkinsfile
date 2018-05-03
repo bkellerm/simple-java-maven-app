@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     triggers {
-        pollSCM '*/1 * * * *'
+        pollSCM('*/1 * * * *')
     }
 
     parameters {
@@ -13,6 +13,9 @@ pipeline {
         stage('Output'){
             steps {
                 sh 'echo "This tests if outputing works"'
+            }
+            steps {
+                echo "Parameter value is: ${params.DEPLOY_BUILD}"
             }
         }
         stage('Test') {
